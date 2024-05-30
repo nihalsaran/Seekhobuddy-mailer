@@ -1,0 +1,16 @@
+{
+  "name": "seekhobuddy-mailer",
+  "version": "1.0.0",
+  "main": "api/sendEmail.js",
+  "scripts": {
+    "start": "node api/sendEmail.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^4.19.2",
+    "nodemailer": "^6.9.13"
+  }
+}
