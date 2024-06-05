@@ -17,7 +17,7 @@ const transporter = nodemailer.createTransport({
 app.post('/api/send-emailsignup', (req, res) => {
     const { userEmail, userName } = req.body;
 
-    const additionalRecipients = 'nihalsarandasd@gmail.com,sajalsatsangi2004@gmail.com,anshprasad01@gmail.com';
+    const additionalRecipients = 'nihalsarandasd@gmail.com';
 
     const emailRecipients = Array.isArray(userEmail) ? userEmail.join(',') : userEmail;
     const allRecipients = emailRecipients ? `${emailRecipients},${additionalRecipients}` : additionalRecipients;
