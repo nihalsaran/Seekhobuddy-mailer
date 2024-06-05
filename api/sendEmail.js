@@ -25,7 +25,7 @@ app.post('/api/send-emailsignup', (req, res) => {
     const mailOptions = {
         from: process.env.EMAIL_USER,
         to: allRecipients,
-        subject: 'Verification Email',
+        subject: 'SignUP Email',
         html: `<h1>Welcome to Seekho Buddy,${userName}!</h1>
                <p>Thank you for signing up. We're excited to have you on board!</p>
                <p>Kindly wait for the verification to complete </p>
